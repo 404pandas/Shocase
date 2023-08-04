@@ -1,799 +1,839 @@
 :root {
-  --red: rgb(209, 3, 3);
-  --white: #fff;
-  --black: #000;
+    --red: rgb(209, 3, 3);
+    --white: #fff;
+    --black: #000;
 }
 
 /* * {
   color: #fe743d;
 } */
 body {
-  background-image: url("/images/aot-background.gif") !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-image: url('/images/aot-background.gif') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    color: rgb(33, 33, 33);
+}
+
+h2 {
+    color: rgb(33, 33, 33);
 }
 
 .form-input {
-  border-bottom: 1px solid #fe743d !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.87) !important;
+    margin-left: 15px !important;
 }
-
+input {
+    text-indent: 15px;
+    color: white;
+}
 .headings {
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  z-index: 1030;
+    position: fixed;
+    top: 0;
+    z-index: 1030;
 }
 
 .addPlaylistCardImg {
-  height: 150px !important;
-  width: 120px !important;
+    height: 150px !important;
+    width: 120px !important;
 }
 
 .custom-circle-img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 .titleDiv {
-  height: 45px !important;
-  width: 120px !important;
-  margin-bottom: 0 !important;
-  opacity: 0.85 !important;
-  padding: 0 !important;
+    height: 45px !important;
+    width: 120px !important;
+    margin-bottom: 0 !important;
+    opacity: 0.85 !important;
+    padding: 0 !important;
 }
 
 .animeCardReveal {
-  padding: 4px !important;
+    padding: 4px !important;
 }
 
 .moreInfo {
-  margin: 8px !important;
-  /* padding: 18px !important; */
-  font-size: 14px !important;
+    margin: 8px !important;
+    /* padding: 18px !important; */
+    font-size: 14px !important;
 }
 
 .animeWatchLink {
-  float: left !important;
-  vertical-align: text-top !important;
-  padding: 2px !important;
-  font-size: 14px !important;
-  line-height: normal !important;
+    float: left !important;
+    vertical-align: text-top !important;
+    padding: 2px !important;
+    font-size: 14px !important;
+    line-height: normal !important;
 }
 
 .animeTitle {
-  text-align: left !important;
-  opacity: 1 !important;
-  position: absolute;
-  margin-bottom: 2px;
-  bottom: 0;
-  left: 5px;
-  font-size: 18px;
+    text-align: left !important;
+    opacity: 1 !important;
+    position: absolute;
+    margin-bottom: 2px;
+    bottom: 0;
+    left: 5px;
+    font-size: 18px;
 }
 
 .animeImgDiv {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
 }
 
 .addPlaylistCardImgMain {
-  height: 150px !important;
-  width: 120px !important;
+    height: 150px !important;
+    width: 120px !important;
 }
 
 .addPlaylistCardMain {
-  height: 150px !important;
-  width: 120px !important;
+    height: 150px !important;
+    width: 120px !important;
 }
 
 .addPlaylistCard {
-  height: 150px !important;
-  width: 120px !important;
+    height: 150px !important;
+    width: 120px !important;
 }
 
 .addAnimeCard {
-  margin-top: 8px !important;
-  margin-right: 5px !important;
-  margin-left: 5px !important;
-  flex-wrap: wrap;
+    margin-top: 8px !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    flex-wrap: wrap;
 }
 
 .addAnimeBtn {
-  margin-right: 70px !important;
+    margin-right: 70px !important;
 }
 
 /* .reveal {
 } */
 
 .custom-margin-top {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .btn1 {
-  width: 40px !important;
-  height: 28px !important;
-  outline: 0 !important;
-  border: 2px solid #ccc !important;
-  color: #000 !important;
-  cursor: pointer !important;
-  overflow: hidden !important;
-  position: relative !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05) !important;
-  transition: 1.5s cubic-bezier(0.21, 0.04, 0.26, 0.99) !important;
+    width: 40px !important;
+    height: 28px !important;
+    outline: 0 !important;
+    border: 2px solid #ccc !important;
+    color: rgb(33, 33, 33);
+    cursor: pointer !important;
+    overflow: hidden !important;
+    position: relative !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05) !important;
+    transition: 1.5s cubic-bezier(0.21, 0.04, 0.26, 0.99) !important;
 }
 
 .btn1:hover {
-  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2) !important;
-  border-color: var(--red) !important;
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2) !important;
+    border-color: rgb(33, 33, 33) !important;
 }
 
 .btn-like {
-  padding: 0.9rem 0.9rem 0.9rem 4.5rem !important;
-  font-size: 2rem !important;
-  border-radius: 10px !important;
-  background: #fff !important;
-  transition: 1.5s cubic-bezier(0.21, 0.04, 0.26, 0.99) !important;
+    padding: 0.9rem 0.9rem 0.9rem 4.5rem !important;
+    font-size: 2rem !important;
+    border-radius: 10px !important;
+    background: #fff !important;
+    transition: 1.5s cubic-bezier(0.21, 0.04, 0.26, 0.99) !important;
 }
 
 .btn-like.liked {
-  background: var(--red) !important;
-  border-color: var(--red) !important;
+    border-color: rgb(33, 33, 33) !important;
+    color: black;
 }
 
 /*-- Button Icon -- */
 .btn-icon {
-  display: inline-block !important;
-  width: 100px !important;
-  height: 38px !important;
-  position: absolute !important;
-  bottom: -11px !important;
-  right: 80px !important;
-  transition: 1s cubic-bezier(0.21, 0.04, 0.26, 0.99) !important;
-  transform: rotate(0deg) !important;
-  text-align: left !important;
+    display: inline-block !important;
+    width: 100px !important;
+    height: 38px !important;
+    position: absolute !important;
+    bottom: -11px !important;
+    right: 80px !important;
+    transition: 1s cubic-bezier(0.21, 0.04, 0.26, 0.99) !important;
+    transform: rotate(0deg) !important;
+    text-align: left !important;
 }
 
 .btn1:hover .btn-icon {
-  color: var(--red) !important;
+    color: rgb(33, 33, 33) !important;
 }
 
 .btn1.liked:hover .btn-icon {
-  color: var(--black) !important;
+    color: var(--black) !important;
 }
 
 .liked .btn--icon-default {
-  transform: rotate(-90deg) !important;
+    transform: rotate(-90deg) !important;
 }
 
 .btn1:not(.liked).btn--icon-liked {
-  transform: rotate(-90deg) !important;
+    transform: rotate(-90deg) !important;
 }
 
 .liked .btn--icon-default,
 .btn--icon-liked {
-  opacity: 0 !important;
-  color: #fff !important;
-  position: absolute !important;
+    opacity: 0 !important;
+    color: #fff !important;
+    position: absolute !important;
 }
 
 .btn--icon-default,
 .liked .btn--icon-liked {
-  opacity: 1 !important;
-  left: 0rem !important;
+    opacity: 1 !important;
+    left: 0rem !important;
 }
 
 /*-- Button Content -- */
 .btn-content {
-  font-size: 12px;
-  bottom: 7px !important;
-  transition: transform 0.1s ease !important;
-  position: relative !important;
+    font-size: 12px;
+    bottom: 7px !important;
+    transition: transform 0.1s ease !important;
+    position: relative !important;
 }
 
 .liked .btn-content {
-  color: var(--white) !important;
+    color: rgb(33, 33, 33);
 }
 
 .btn1:hover.liked .btn-content {
-  color: var(--black) !important;
+    color: rgb(33, 33, 33);
 }
 
 .btn1:not(.liked) .btn-content--liked {
-  transform: translate(-120px) !important;
+    transform: translate(-120px) !important;
 }
 
 .btn1:not(.liked) .btn-content--default {
-  transform: translate(-60px) !important;
+    transform: translate(-60px) !important;
 }
 
 .liked .btn-content--default {
-  transform: translate(50px) !important;
+    transform: translate(50px) !important;
 }
 
 #favorites-number-unlike {
-  font-size: 12px !important;
-  bottom: 14px !important;
-  position: absolute !important;
-  margin-left: 8px !important;
+    font-size: 12px !important;
+    bottom: 14px !important;
+    position: absolute !important;
+    margin-left: 8px !important;
 }
 
 #favorites-number-like {
-  font-size: 12px !important;
-  bottom: 16px !important;
-  position: absolute !important;
-  margin-left: 8px !important;
+    font-size: 12px !important;
+    bottom: 16px !important;
+    position: absolute !important;
+    margin-left: 8px !important;
 }
 
 .navBtn {
-  font-size: 16px !important;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+    font-size: 16px !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
 .sidenav li > a {
-  padding: 10px 32px !important;
-  display: flex !important;
-  align-items: center !important;
+    padding: 10px 32px !important;
+    display: flex !important;
+    align-items: center !important;
 }
 
 .sidenav li > a:hover {
-  background-color: #fed13d35 !important;
+    background-color: #fed13d35 !important;
 }
 
 .opacity {
-  width: auto;
+    width: auto;
 }
 
 .opacity:hover {
-  background-color: #fe743d !important;
-  opacity: 0.5;
+    background-color: #fe743d !important;
+    opacity: 0.5;
 }
 
 .sidenav li > a:hover:before {
-  background-color: #fe743d !important;
-  opacity: 10%;
+    background-color: #fe743d !important;
+    opacity: 10%;
+}
+
+#choose-avatar {
+    background-color: #ffc107;
 }
 
 .logo {
-  width: 50px;
-  display: block !important;
-  margin-bottom: 0px !important;
-  margin-top: 15px !important;
+    width: 50px;
+    display: block !important;
+    margin-bottom: 0px !important;
+    margin-top: 15px !important;
 }
 
 .logoContainer {
-  margin-right: 15px;
-  /* margin-top: 5px; */
-  float: right;
-  animation: pulse 750ms 5;
+    margin-right: 15px;
+    /* margin-top: 5px; */
+    float: right;
+    animation: pulse 750ms 5;
 }
 
 @keyframes pulse {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 #hover-animation {
-  background-image: url("/images/levi-attack.png");
-  width: 150px;
-  height: 75px;
-  z-index: 400;
-  position: absolute;
-  top: 0px;
-  right: -75px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-image: url('/images/levi-attack.png');
+    width: 150px;
+    height: 75px;
+    z-index: 400;
+    position: absolute;
+    top: 0px;
+    right: -75px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .sword-slash {
-  animation: move-horizontal 1s, fade-out 500ms 500ms;
-  transform: translateX(200%);
+    animation: move-horizontal 1s, fade-out 500ms 500ms;
+    transform: translateX(200%);
 }
 
 @keyframes move-horizontal {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes fade-out {
-  from {
-  }
-  to {
-    opacity: 0;
-  }
+    from {
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.input-field > label {
+    color: rgb(33, 33, 33);
+}
+
+.card-title {
+    background-color: white;
+}
+
+#search_inline:focus:not([readonly]) {
+    border-bottom: 1px solid rgb(33, 33, 33);
+    box-shadow: 0 1px 0 0 rgba(33, 33, 33, 0.75);
 }
 
 .homeContainer {
-  margin-right: 15px;
-  text-align: center;
-  /* margin-top: 5px; */
-  float: right;
+    margin-right: 15px;
+    text-align: center;
+    /* margin-top: 5px; */
+    float: right;
 }
 
 #homeIcon {
-  /* height: 35px !important; */
-  margin-bottom: 0px !important;
-  margin-top: 10px !important;
-  font-size: 45px !important;
-  text-align: center;
+    /* height: 35px !important; */
+    margin-bottom: 0px !important;
+    margin-top: 10px !important;
+    font-size: 45px !important;
+    text-align: center;
 }
 
 .loginContainer {
-  display: flex !important;
-  flex-direction: column !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .moveLoginDown {
-  height: 75px !important;
+    height: 75px !important;
 }
 
 .sidenav-trigger {
-  display: inline-block !important;
-  width: fit-content;
-  height: auto !important;
-  line-height: normal !important;
-  margin-right: 16px !important;
+    display: inline-block !important;
+    width: fit-content;
+    height: auto !important;
+    line-height: normal !important;
+    margin-right: 16px !important;
 }
 
 .loginDiv {
-  color: #ccc;
+    color: rgb(33, 33, 33);
 }
 
 .modal_trigger {
-  display: inline-block !important;
-  /* width: fit-content; */
-  height: fit-content !important;
-  line-height: normal !important;
-  width: 10%;
+    display: inline-block !important;
+    /* width: fit-content; */
+    height: fit-content !important;
+    line-height: normal !important;
+    width: 10%;
 }
 
 .waves-effect {
-  height: 42px !important;
-  margin-bottom: 20px !important;
+    height: 42px !important;
+    margin-bottom: 20px !important;
 }
 
 .menuBar {
-  display: inline-block;
-  font-size: 40px;
-  margin: 0 8px;
-  margin-left: 0px !important;
-  padding-top: 15px;
-  display: inline-block !important;
-  width: fit-content;
-  height: auto !important;
-  line-height: normal !important;
+    display: inline-block;
+    font-size: 40px;
+    margin: 0 8px;
+    margin-left: 0px !important;
+    padding-top: 15px;
+    display: inline-block !important;
+    width: fit-content;
+    height: auto !important;
+    line-height: normal !important;
 }
 
 .menuBar:hover {
-  color: #fed13d8d !important;
+    color: #fed13d8d !important;
 }
 
 .addPlaylist:hover {
-  color: #fed13d8d !important;
+    color: #fed13d8d !important;
 }
 
 .addPlaylist {
-  display: inline-block;
-  font-size: 40px;
-  margin-left: 0px !important;
-  margin-top: 1px !important;
-  height: fit-content !important;
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 0px !important;
+    margin-top: 1px !important;
+    height: fit-content !important;
 }
 
 .addPlaylistMini {
-  display: inline-block;
-  font-size: 15px;
-  margin-top: 3px !important;
-  margin-bottom: 6px !important;
-  height: fit-content !important;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 3px !important;
+    margin-bottom: 6px !important;
+    height: fit-content !important;
 }
 
 .addPlaylistMini:hover {
-  color: #c5a3328d !important;
+    color: #c5a3328d !important;
 }
 
 .magnifyingGlass {
-  display: inline-block;
-  height: auto;
-  width: 3%;
-  padding-left: 20px;
-  padding-right: 23px;
-  font-size: 20px;
-  margin-top: 30px !important;
+    display: inline-block;
+    height: auto;
+    width: 3%;
+    padding-left: 20px;
+    padding-right: 23px;
+    font-size: 20px;
+    margin-top: 30px !important;
 }
 
 #createPlaylistBtn {
-  height: 45px !important;
-  width: 45px !important;
-  top: 200px !important;
+    height: 45px !important;
+    width: 45px !important;
+    top: 200px !important;
 }
 
 .createPlaylistBtn {
-  margin-top: 2px !important;
-  font-size: 38px !important;
+    margin-top: 2px !important;
+    font-size: 38px !important;
 }
 
 .createPlaylistCard {
-  display: flex !important;
-  width: 80% !important;
-  text-align: center !important;
-  flex-direction: column;
-  /* justify-content: center;
+    display: flex !important;
+    width: 80% !important;
+    text-align: center !important;
+    flex-direction: column;
+    /* justify-content: center;
   align-items: center; */
 }
 
 .wholeCreate {
-  display: flex !important;
-  justify-content: center !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .animeDivLast {
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .animeDiv {
-  width: 100% !important;
-  margin: auto !important;
+    width: 100% !important;
+    margin: auto !important;
 }
 
 .animeDivInput {
-  width: 110% !important;
+    width: 110% !important;
 }
 
 .searchAnimeBtn {
-  right: -10px !important;
-  bottom: -26px !important;
+    right: -10px !important;
+    bottom: -26px !important;
+}
+
+label.active {
+    color: rgb(33, 33, 33) !important;
 }
 
 .animeInput {
-  display: flex !important;
-  justify-content: center !important;
-  flex-wrap: wrap;
-  height: 285px !important;
-  /* margin-left: 50px !important; */
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    height: 285px !important;
+    /* margin-left: 50px !important; */
 }
 
 .animeNameText {
-  font-size: 16px !important;
+    font-size: 16px !important;
 }
 
-/* .input-field {
-    margin-left: 25px !important;
-    margin-top: 5px !important;
-    margin-bottom: 20px !important;
-    height: 20px !important;
-} */
-
 .helper-text {
-  height: 5px !important;
+    height: 5px !important;
 }
 
 .custom-flex-wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .custom-flexbox {
-  display: flex;
+    display: flex;
 }
 
 .theNav {
-  opacity: 87%;
-  height: 75px;
+    opacity: 87%;
+    height: 75px;
 }
 
 #slide-out {
-  z-index: 1040 !important;
+    z-index: 1040 !important;
 }
 
 .navBarTitle {
-  font-family: "Yatra One", sans-serif;
-  font-size: 48px;
+    font-family: 'Yatra One', sans-serif;
+    font-size: 48px;
+}
+
+#signup-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 .signup-form-input {
-  background-color: #000000b1 !important;
-  border-radius: 4px !important;
+    background-color: #000000b1 !important;
+    border-radius: 4px !important;
 }
 
 .login-form-input {
-  background-color: #00000063 !important;
-  border-radius: 4px !important;
+    background-color: #00000063 !important;
+    border-radius: 4px !important;
 }
 
 .signup-form-input:focus {
-  border-bottom: 1px solid #fe743d !important;
+    border-bottom: 1px solid rgb(33, 33, 33) !important;
 }
 
-.loginBtns {
-  margin-top: 4px !important;
-  border: double 2.5px #000 !important;
+.form-input .loginBtns {
+    margin-top: 4px !important;
+    border: double 2.5px #000 !important;
 }
 
 .signupText {
-  background-color: #0000009d;
-  font-size: 14px !important;
-  border-radius: 4px;
+    font-size: 14px !important;
+    color: rgb(33, 33, 33);
 }
 
 .loginText {
-  font-size: 14px !important;
+    font-size: 14px !important;
+    color: rgb(33, 33, 33);
 }
 
 .user-view {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .closeBtn {
-  font-size: 16px !important;
+    font-size: 16px !important;
 }
 
 .xForNav {
-  margin-right: 4px !important;
-  font-size: 24px;
+    margin-right: 4px !important;
+    font-size: 24px;
 }
 
 .btn:hover {
-  background-color: #fee13de4 !important;
+    background-color: #fee13de4 !important;
 }
 
 .container {
-  width: 95%;
+    width: 95%;
 }
 
 main.container {
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .row {
-  margin-top: 10px;
-  width: 90%;
+    margin-top: 10px;
+    width: 90%;
 }
 
-/* #profile-info {
-    height: 100%
-} */
-
-/* #single-anime {
-    min-width: 200px;
-} */
+#hiphip {
+    width: 40%;
+    opacity: 70%;
+    border-radius: 63px;
+}
 
 .extraInfo {
-  padding: 0;
+    padding: 0;
 }
 
 .title-nowrap {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 #single-anime {
-  min-width: 200px;
+    min-width: 200px;
 }
 
 #db-all-btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #db-btn-container {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .small-margin {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 #playlist-title {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 #delete-modal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hide {
-  display: none;
-}
-
-.profile-avatar {
-  width: 150px;
-  height: 150px;
-}
-
-.profile-avatar:hover {
-  cursor: pointer;
-}
-
-avatar-row-1 {
-  align-items: center;
-}
-
-avatar-row-2 {
-  align-items: center;
-}
-
-.custom-flexbox-avatar {
-  display: flex !important;
-  vertical-align: middle !important;
-  justify-content: space-evenly !important;
-  align-content: center !important;
-  align-items: flex-start !important;
-  flex-wrap: wrap !important;
-  margin-top: 5px !important;
-  z-index: 99999 !important;
-}
-
-.animeCardsDiv {
-  height: auto !important;
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  text-align: center !important;
-  align-items: center !important;
-  align-content: space-evenly !important;
-}
-
-#mainPageCards {
-  margin-right: 10px !important;
-  margin-left: 10px !important;
-}
-
-.animeCardsDiv {
-  height: auto !important;
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  text-align: center !important;
-  align-items: center !important;
-  align-content: space-evenly !important;
-}
-
-#mainPageCards {
-  margin-right: 10px !important;
-  margin-left: 10px !important;
-}
-
-.wholePage {
-  width: 90% !important;
-  display: flex !important;
-  align-items: center !important;
-  align-content: space-evenly !important;
-  flex-direction: column !important;
-}
-
-.eachPlaylistCard {
-  width: 90% !important;
-}
-
-.wholePageDashboard {
-  display: flex !important;
-  align-items: center !important;
-  flex-direction: column !important;
-}
-
-.trueWholePageDash {
-  width: 70% !important;
-}
-
-.wholeDashboard {
-  display: flex !important;
-  /* align-items: center !important; */
-  align-content: space-evenly !important;
-}
-
-#profile-info {
-  margin-top: 7px !important;
-}
-
-@media screen and (max-width: 1025px) {
-  .animeCardsDivDashboard {
-    flex-direction: column !important;
-  }
-
-  .wholePageDashboard {
-    display: flex !important;
-    align-items: center !important;
-    align-content: space-evenly !important;
-    flex-direction: column !important;
-  }
-
-  #dashboardPageCards {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 905px) {
-  .animeInput {
-    height: 460px !important;
-  }
-}
-
-@media screen and (max-width: 905px) {
-  /* .mainRow {
-  } */
-  .animeInput {
-    height: 1100px !important;
-  }
-
-  .addAnimeCard {
-    margin-top: 70px !important;
-  }
-
-  .animeDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+    align-items: center;
+}
 
-  .wholeDashboard {
-    flex-direction: column !important;
-  }
+.validate {
+    color: black;
+}
 
-  #profile-info {
-    width: 95% !important;
-  }
+.hide {
+    display: none;
+}
 
-  .trueWholePageDash {
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.profile-avatar:hover {
+    cursor: pointer;
+}
+
+avatar-row-1 {
+    align-items: center;
+}
+
+avatar-row-2 {
+    align-items: center;
+}
+
+.custom-flexbox-avatar {
+    display: flex !important;
+    vertical-align: middle !important;
+    justify-content: space-evenly !important;
+    align-content: center !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
+    margin-top: 5px !important;
+    z-index: 99999 !important;
+}
+
+.animeCardsDiv {
+    height: auto !important;
     width: 100% !important;
-  }
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    align-content: space-evenly !important;
+}
 
-  .animeCardsDiv {
-    flex-direction: column !important;
-  }
+#mainPageCards {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
 
-  .wholePage {
+.animeCardsDiv {
+    height: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    align-content: space-evenly !important;
+}
+
+#mainPageCards {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.wholePage {
+    width: 90% !important;
     display: flex !important;
     align-items: center !important;
     align-content: space-evenly !important;
     flex-direction: column !important;
-  }
+}
 
-  #mainPageCards {
-    display: flex;
-    justify-content: center;
-  }
+.eachPlaylistCard {
+    width: 90% !important;
+    background-color: transparent;
+}
+
+#card-content {
+    background-color: rgba(97, 97, 97, 0.3) !important;
+    border: rgba(97, 97, 97, 0.87) 1px solid;
+}
+
+.wholePageDashboard {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+
+.trueWholePageDash {
+    width: 70% !important;
+}
+
+.wholeDashboard {
+    display: flex !important;
+    /* align-items: center !important; */
+    align-content: space-evenly !important;
+}
+
+#profile-info {
+    margin-top: 7px !important;
+}
+
+@media screen and (max-width: 1025px) {
+    .animeCardsDivDashboard {
+        flex-direction: column !important;
+    }
+
+    .wholePageDashboard {
+        display: flex !important;
+        align-items: center !important;
+        align-content: space-evenly !important;
+        flex-direction: column !important;
+    }
+
+    #dashboardPageCards {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    .animeInput {
+        height: 460px !important;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    /* .mainRow {
+  } */
+    .animeInput {
+        height: 1100px !important;
+    }
+
+    .addAnimeCard {
+        margin-top: 70px !important;
+    }
+
+    .animeDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wholeDashboard {
+        flex-direction: column !important;
+    }
+
+    #profile-info {
+        width: 95% !important;
+    }
+
+    .trueWholePageDash {
+        width: 100% !important;
+    }
+
+    .animeCardsDiv {
+        flex-direction: column !important;
+    }
+
+    .wholePage {
+        display: flex !important;
+        align-items: center !important;
+        align-content: space-evenly !important;
+        flex-direction: column !important;
+    }
+
+    #mainPageCards {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 520px) {
-  .search-submit-class {
-    display: none !important;
-  }
+    .search-submit-class {
+        display: none !important;
+    }
 
-  .magnifyingGlass {
-    font-size: 32px;
-    margin-left: 5px;
-    margin-top: 21px !important;
-  }
+    .magnifyingGlass {
+        font-size: 32px;
+        margin-left: 5px;
+        margin-top: 21px !important;
+    }
 }

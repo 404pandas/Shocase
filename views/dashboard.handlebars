@@ -4,10 +4,10 @@
 
     {{!-- Left side of page --}}
     <div class="container col s12 m4 l3" id="profile-info">
-        <h4 class="grey-text text-lighten-1 headings center-align">User Info</h4>
+        <h4 class=" headings center-align">User Info</h4>
         <div class="container">
             <div class="card hoverable">
-                <div class="card-content grey lighten-4">
+                <div class="card-content" id="card-content">
                     <div class="center-align">
                         {{!-- <h3 class="playlist-title" id="#">User Info</h3> --}}
                         <a><img class="custom-circle-img" src="/images/test_avatar_{{currentUser.avatar}}.png"></a>
@@ -27,13 +27,13 @@
 
     {{!-- Right side of page with playlists --}}
     <div class="trueWholePageDash container">
-        <h4 class="grey-text text-lighten-1 center-align headings">My Playlists</h4>
+        <h4 class=" center-align headings">My Playlists</h4>
 
         {{!-- Displays Alert When User Has No Playlists --}}
         {{#unless playlists}}
         <div class="container">
             <div class="card hoverable">
-                <div class="card-content grey lighten-4">
+                <div class="card-content" id="card-content">
                     <div class="center-align">
                         <h3 class="playlist-title" id="">You haven't made any playlists!</h3>
                         <p class="custom-margin-top">Click the <a href="/create-playlists"><i
@@ -49,7 +49,7 @@
 
   {{#each playlists as |playlist|}}
     <div class="eachPlaylistCard eachPlaylistCardDashboard card hoverable">
-      <div class="card-content grey lighten-4">
+      <div class="card-content" id="card-content">
         <div class="mainRow row center-align">
           <a class="titleLink" href="/playlist/{{playlist.id}}"><h3 class="playlist-title" id="{{playlist.id}}">{{playlist.title}}</h3></a>
           <h6 class="playlist-author" id="{{playlist.id}}">By: {{playlist.user.username}}</h6>
@@ -65,7 +65,7 @@
                       class="activator addPlaylistCardImgMain"
                       src="{{anime.anime_image}}"
                     />
-                    <div class="card-title titleDiv grey lighten-4"></div>
+                    <div class="card-title titleDiv  "></div>
                     <h6
                       class="animeTitle grey-text text-darken-4"
                     >{{anime.anime_title}}</h6>

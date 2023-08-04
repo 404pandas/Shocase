@@ -1,10 +1,10 @@
 <!-- Loop over each object in the projects array -->
 <div class="container wholePage">
-  <h4 class="headings grey-text text-lighten-1">All Playlists</h4>
+  <h4 class="headings">All Playlists</h4>
 
   {{#each playlists as |playlist|}}
     <div class="eachPlaylistCard card hoverable">
-      <div class="card-content grey lighten-4">
+      <div class="card-content" id="card-content">
         <div class="mainRow row center-align">
           <a href="/playlist/{{playlist.id}}"><h3 class="playlist-title" id="{{playlist.id}}">{{playlist.title}}</h3></a>
           <h6 class="playlist-author" id="{{playlist.id}}">By: {{playlist.user.username}}</h6>
@@ -20,7 +20,7 @@
                       class="activator addPlaylistCardImgMain"
                       src="{{anime.anime_image}}"
                     />
-                    <div class="card-title titleDiv grey lighten-4"></div>
+                    <div class="card-title titleDiv  "></div>
                     <h6
                       class="animeTitle grey-text text-darken-4"
                     >{{anime.anime_title}}</h6>
@@ -73,7 +73,7 @@
                 id="favorites-number-like"
                 class="black-text"
               >{{playlist.favoritesCount}}</span>
-              <i class="material-icons">favorite</i>
+              <i class="material-icons" id="heart">favorite</i>
               <span class="btn-content btn-content--default">
                 Unlike
               </span>
