@@ -18,11 +18,48 @@ const anime2InputDiv = document.getElementById('anime2Input')
 const anime3InputDiv = document.getElementById('anime3Input')
 const anime4InputDiv = document.getElementById('anime4Input')
 const createPlaylist = document.getElementById('createPlaylist')
-const playlistSearch = document.getElementById('create_playlist_inline')
+const loading1 = document.getElementById('loading1')
+const loading2 = document.getElementById('loading2')
+const loading3 = document.getElementById('loading3')
+const loading4 = document.getElementById('loading4')
+
+// Loader
+function displaySpinner1() {
+    loading1.classList.add('display')
+}
+
+function hideSpinner1() {
+    loading1.classList.remove('display')
+}
+function displaySpinner2() {
+    loading2.classList.add('display')
+}
+
+function hideSpinner2() {
+    loading2.classList.remove('display')
+}
+function displaySpinner3() {
+    loading3.classList.add('display')
+}
+
+function hideSpinner3() {
+    loading3.classList.remove('display')
+}
+function displaySpinner4() {
+    loading4.classList.add('display')
+}
+
+function hideSpinner4() {
+    loading4.classList.remove('display')
+}
 
 // Starts the search for anime
 async function startSearch(search) {
     const animeArray = []
+    displaySpinner1()
+    displaySpinner2()
+    displaySpinner3()
+    displaySpinner4()
     fetch(
         'https://api.jikan.moe/v4/anime?q=' +
             search +
@@ -32,6 +69,10 @@ async function startSearch(search) {
     )
         .then((response) => response.json())
         .then(function (res) {
+            hideSpinner1()
+            hideSpinner2()
+            hideSpinner3()
+            hideSpinner4()
             console.log(res.data)
             if (res.data.length < 1) {
                 alert('Enter a real anime name')
