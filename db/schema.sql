@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS shocase_db;
+
+CREATE DATABASE shocase_db;

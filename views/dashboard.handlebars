@@ -1,0 +1,178 @@
+<div class="row wholeDashboard">
+
+
+
+    {{!-- Left side of page --}}
+    <div class="container col s12 m4 l3" id="profile-info">
+        <h4 class="grey-text text-lighten-1 headings center-align">User Info</h4>
+        <div class="container">
+            <div class="card hoverable">
+                <div class="card-content grey lighten-4">
+                    <div class="center-align">
+                        {{!-- <h3 class="playlist-title" id="#">User Info</h3> --}}
+                        <a><img class="custom-circle-img" src="/images/test_avatar_{{currentUser.avatar}}.png"></a>
+                        <p class="custom-margin-top">Username: <a><span class="name">{{currentUser.username}}</span></a>
+                        </p>
+                        <p class="custom-margin-top">Email: <a><span
+                                    class="email">{{currentUser.email}}</span></a></span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    {{!-- Right side of page with playlists --}}
+    <div class="trueWholePageDash container">
+        <h4 class="grey-text text-lighten-1 center-align headings">My Playlists</h4>
+
+        {{!-- Displays Alert When User Has No Playlists --}}
+        {{#unless playlists}}
+        <div class="container">
+            <div class="card hoverable">
+                <div class="card-content grey lighten-4">
+                    <div class="center-align">
+                        <h3 class="playlist-title" id="">You haven't made any playlists!</h3>
+                        <p class="custom-margin-top">Click the <a href="/create-playlists"><i
+                                    class="addPlaylistMini grey-text text-darken-4 fa-solid fa-plus"></i></a> at the top
+                            of the screen to make a new one.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/unless}}
+
+       <div class="container wholePageDashboard">
+
+  {{#each playlists as |playlist|}}
+    <div class="eachPlaylistCard eachPlaylistCardDashboard card hoverable">
+      <div class="card-content grey lighten-4">
+        <div class="mainRow row center-align">
+          <a class="titleLink" href="/playlist/{{playlist.id}}"><h3 class="playlist-title" id="{{playlist.id}}">{{playlist.title}}</h3></a>
+          <h6 class="playlist-author" id="{{playlist.id}}">By: {{playlist.user.username}}</h6>
+          <h6 class="playlist-author" id="{{playlist.id}}">Date Created: {{format_date playlist.date_created}}</h6>
+  <div class="animeCardsDiv animeCardsDivDashboard">
+          {{#each playlist.animes as |anime|}}
+          
+            <div id="dashboardPageCards" class="mainPageCards dashboardCards col">
+              <div class="addPlaylistCardMain dashboardPageCards card">
+                <div class="card-image activator addPlaylistCardImgMain">
+                  <div class="animeImgDiv">
+                    <img
+                      class="activator addPlaylistCardImgMain"
+                      src="{{anime.anime_image}}"
+                    />
+                    <div class="card-title titleDiv grey lighten-4"></div>
+                    <h6
+                      class="animeTitle grey-text text-darken-4"
+                    >{{anime.anime_title}}</h6>
+                  </div>
+                </div>
+                <div class="animeCardReveal card-reveal reveal">
+                  <span class="card-title"><i
+                      class="material-icons amber-text right"
+                    >close</i></span>
+                  <a
+                    class="moreInfo btn amber waves-effect waves-light modal-trigger"
+                    href="#{{anime.anime_title}}"
+                  >More Info</a>
+
+                </div>
+              </div>
+            </div>
+            <div id="{{anime.anime_title}}" class="modal">
+              <div class="modal-content">
+                <h4>{{anime.anime_title}}</h4>
+                <a class="animeWatchLink" href="{{anime.watch_link}}">Click Here
+                  to watch
+                  {{anime.anime_title}}!</a>
+                <p>{{anime.more_info}}</p>
+
+              </div>
+              <div class="modal-footer">
+                <a
+                  href="#!"
+                  class="modal-close waves-effect waves-green btn-flat"
+                >Close</a>
+              </div>
+            </div>
+          {{/each}}
+          </div>
+        </div>
+                {{!-- {{#if hasFavorited}}
+                <a class="already-favorited-btn btn-floating" data-id="{{playlist.id}}"><i
+                        class="material-icons">favorite</i></a><span
+                    id="favorites-number">{{playlist.favoritesCount}}</span>
+                {{else}}
+                <a class="favorite-btn btn-floating" data-id="{{playlist.id}}"><i
+                        class="material-icons">favorite_border</i></a><span
+                    id="favorites-number">{{playlist.favoritesCount}}</span>
+                {{/if}} --}}
+                <div id="db-all-btn-container">
+                    {{#if playlist.hasFavorited}}
+                    <button class="btn1 btn-like liked" data-id="{{playlist.id}}">
+                        <span class="btn-icon btn--icon-default">
+                            <i class="material-icons">favorite_border</i>
+                            <span class="btn-content  btn-content--liked">
+                                Unlike
+                            </span>
+                        </span>
+                        <span class="btn-icon btn--icon-liked already-favorited-btn">
+                            <span id="favorites-number-like" class="black-text">{{playlist.favoritesCount}}</span>
+                            <i class="material-icons">favorite</i>
+                            <span class="btn-content btn-content--default">
+                                Unlike
+                            </span>
+
+                        </span>
+
+
+                    </button>
+                    {{!-- <button class="already-favorited-btn"><i class="material-icons">favorite</i></button> --}}
+                    {{else}}
+                    <button class="btn1 btn-like" data-id="{{playlist.id}}">
+                        <span class="btn-icon btn--icon-default favorite-btn">
+                            <i class="material-icons">favorite_border</i>
+                            <span class="btn-content btn-content--liked">
+                                Like {{playlist.favoritesCount}}
+                            </span>
+                        </span>
+                        <span class="btn-icon btn--icon-liked">
+                            <i class="material-icons">favorite</i>
+                            <span class="btn-content btn-content--default">
+                                Like
+                            </span>
+                        </span>
+                    </button>
+                    {{!-- <button class="favorite-btn"><i class="material-icons">favorite_border</i></button> --}}
+                    {{/if}}
+                    <div id="db-btn-container">
+                        <a class="edit-btn btn-floating small-margin" data-id="{{playlist.id}}"><i
+                                class="small material-icons">edit</i></a>
+                        <a class="save-btn btn-floating hide small-margin" data-id="{{playlist.id}}"><i
+                                class="small material-icons">save</i></a>
+                        <a class="btn-floating red modal-trigger small-margin" href="#modal-container"
+                            data-id="{{playlist.id}}"><i class="small material-icons">remove</i></a>
+
+                        <div class="modal" id="modal-container">
+                            <div class="modal-content" id="delete-modal">
+                                <h3>Please click to confirm you want to delete your playlist:</h3><br><br>
+                                <h2>{{playlist.title}}</h2>
+                                <button class="btn-large red delete-btn small-margin"
+                                    data-id="{{playlist.id}}">DELETE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<script src="/js/deleteplaylist.js"></script>
+<script src="/js/edit-playlist.js"></script>
+<script src="/js/favorites.js"></script>
