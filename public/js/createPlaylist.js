@@ -288,29 +288,29 @@ let animeCnt = 0
 
 anime1Btn.addEventListener('click', (e) => {
     e.preventDefault()
-    animeSearch = anime1Input.value.trim()
-    console.log(animeSearch)
-    if (!animeSearch) {
+    animeSearch1 = anime1Input.value.trim()
+    console.log(animeSearch1)
+    if (!animeSearch1) {
         alert('Please enter an anime name')
     } else {
         animeCnt = 0
 
         anime1BtnClick = true
-        startSearch(animeSearch)
+        startSearch(animeSearch1)
     }
 })
 anime1Input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault()
-        animeSearch = anime1Input.value.trim()
-        console.log(animeSearch)
-        if (!animeSearch) {
+        animeSearch1 = anime1Input.value.trim()
+        console.log(animeSearch1)
+        if (!animeSearch1) {
             alert('Please enter an anime name')
         } else {
             animeCnt = 0
 
             anime1BtnClick = true
-            startSearch(animeSearch)
+            startSearch(animeSearch1)
         }
     }
 })
@@ -320,30 +320,30 @@ let anime2BtnClicked = false
 
 anime2Btn.addEventListener('click', (e) => {
     e.preventDefault()
-    animeSearch = anime2Input.value.trim()
-    console.log(animeSearch)
-    if (!animeSearch) {
+    animeSearch2 = anime2Input.value.trim()
+    console.log(animeSearch2)
+    if (!animeSearch2) {
         alert('Please enter an anime name')
     } else {
         animeCnt = 1
 
         anime2BtnClick = true
-        startSearch(animeSearch)
+        startSearch(animeSearch2)
     }
 })
 
 anime2Input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault()
-        animeSearch = anime2Input.value.trim()
-        console.log(animeSearch)
-        if (!animeSearch) {
+        animeSearch2 = anime2Input.value.trim()
+        console.log(animeSearch2)
+        if (!animeSearch2) {
             alert('Please enter an anime name')
         } else {
             animeCnt = 0
 
             anime2BtnClick = true
-            startSearch(animeSearch)
+            startSearch(animeSearch2)
         }
     }
 })
@@ -353,29 +353,29 @@ let anime3BtnClicked = false
 
 anime3Btn.addEventListener('click', (e) => {
     e.preventDefault()
-    animeSearch = anime3Input.value.trim()
-    console.log(animeSearch)
-    if (!animeSearch) {
+    animeSearch3 = anime3Input.value.trim()
+    console.log(animeSearch3)
+    if (!animeSearch3) {
         alert('Please enter an anime name')
     } else {
         anime3BtnClick = true
         animeCnt = 2
-        startSearch(animeSearch)
+        startSearch(animeSearch3)
     }
 })
 
 anime3Input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault()
-        animeSearch = anime3Input.value.trim()
-        console.log(animeSearch)
-        if (!animeSearch) {
+        animeSearch3 = anime3Input.value.trim()
+        console.log(animeSearch3)
+        if (!animeSearch3) {
             alert('Please enter an anime name')
         } else {
             animeCnt = 0
 
             anime3BtnClick = true
-            startSearch(animeSearch)
+            startSearch(animeSearch3)
         }
     }
 })
@@ -385,29 +385,29 @@ let anime4BtnClicked = false
 
 anime4Btn.addEventListener('click', (e) => {
     e.preventDefault()
-    animeSearch = anime4Input.value.trim()
-    console.log(animeSearch)
-    if (!animeSearch) {
+    animeSearch4 = anime4Input.value.trim()
+    console.log(animeSearch4)
+    if (!animeSearch4) {
         alert('Please enter an anime name')
     } else {
         anime4BtnClick = true
         animeCnt = 3
-        startSearch(animeSearch)
+        startSearch(animeSearch4)
     }
 })
 
 anime4Input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault()
-        animeSearch = anime4Input.value.trim()
-        console.log(animeSearch)
-        if (!animeSearch) {
+        animeSearch4 = anime4Input.value.trim()
+        console.log(animeSearch4)
+        if (!animeSearch4) {
             alert('Please enter an anime name')
         } else {
             animeCnt = 0
 
             anime4BtnClick = true
-            startSearch(animeSearch)
+            startSearch(animeSearch4)
         }
     }
 })
